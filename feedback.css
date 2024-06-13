@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&family=Roboto&family=Inter&display=swap");
+
+body {
+  background: rgb(139, 251, 195);
+  background: linear-gradient(
+    90deg,
+    rgba(139, 251, 195, 0.636467086834734) 8%,
+    rgba(139, 251, 208, 0.6672794117647058) 17%,
+    rgba(139, 245, 251, 0.6616771708683473) 23%,
+    rgba(102, 243, 201, 0.6924894957983193) 38%,
+    rgba(85, 239, 214, 0.6280637254901961) 63%,
+    rgba(13, 207, 238, 0.6252626050420168) 94%
+  );
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+hr {
+  margin: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #141313;
+  border: none;
+}
+/* message */
+.f-message{
+  width:155px;
+  height:60px;
+  background-color: rgba(255, 255, 255, 0.89);
+  border-radius:12px;
+  padding:14px;
+  top:130px;
+  right:10px;
+  transition:0.3s;
+  position: absolute;
+  color:black;
+  text-align: center;
+  z-index:545;
+  font-weight: 400;
+}
+.d-none{
+  display: none;
+}
+
+
+
+/* feedback form */
+.ff-form-container {
+  position: relative;
+}
+.f-bg-image {
+  width: 100%;
+  height: 675px;
+  object-fit: cover;
+}
+.f-shade {
+  position: absolute;
+  background-color: rgba(49, 45, 45, 0.621);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.f-form {
+  background-color: rgba(10, 9, 9, 0.502);
+  position: absolute;
+  right: 8%;
+  top:7%;
+  border-radius: 15px;
+  padding: 25px 30px;
+  width:38%;
+  box-shadow: 1px 1px 3px rgb(139, 251, 195);
+  color:white;
+}
+.ff-form-heading{
+  top:5%;
+  left:8%;
+  position:absolute;
+}
+.ff-form-title{
+  font-size:max(30px,4.5vw);
+  margin:10px;
+  font-weight:bold;
+  text-align: center;
+  background: linear-gradient(45deg, #ffffff, #95f1d4);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientColorChange 10s infinite alternate;
+}
+.f-form-heading {
+  margin: 0px;
+  text-align: center;
+  font-weight: bolder;
+  font-size:max(20px,2.5vw);
+  margin-bottom: 10px;
+}
+.f-form-des {
+  margin: 0px;
+  text-align: center;
+  color: rgb(231, 230, 230);
+  margin-bottom: 15px;
+  font-size:max(12px,1.3vw);
+}
+.f-form-box {
+  margin-bottom: 15px;
+}
+.f-form-title {
+  font-size : max(12px,1.4vw);
+  margin : 0px;
+  margin-bottom : 10px;
+  font-weight : bold;
+}
+.f-form-input {
+  width: 90%;
+  outline: none;
+  border: none;
+  border-radius: 14px;
+  padding: 1.1vw 1vw;
+  font-size : max(14px,1.5vw);
+}
+.f-form-title2 {
+  font-size : max(12px,1.4vw);
+  margin: 0px;
+  font-weight: bold;
+}
+.star {
+  font-size: 8vh;
+  cursor: pointer;
+}
+.one {
+  color: rgb(243, 74, 74);
+}
+
+.two {
+  color: rgb(255, 106, 0);
+}
+
+.three {
+  color: rgb(232, 239, 47);
+}
+
+.four {
+  color: rgb(251, 251, 78);
+}
+
+.five {
+  color: rgb(95, 247, 84);
+}
+.f-form-textarea{
+    width: 90%;
+    outline: none;
+    border: none;
+    border-radius: 14px;
+    padding: 1.1vw 1vw;
+    font-size : max(14px,1.5vw);
+    height:120px;
+}
+.f-form-textarea::placeholder{
+    color:rgb(134, 130, 130);
+}
+.btn-submit{
+    width:95%;
+    outline:none;
+    border:none;
+    padding: 1.1vw 1vw;
+    border-radius: 18px;
+    font-size : max(14px,1.5vw);  
+    background-color:rgb(81, 223, 166);
+    font-weight:700;
+    color:rgb(250, 232, 232);
+    transition: all 0.75s ease-in-out;
+}
+.btn-submit:hover{
+  background-color:rgba(37, 235, 156, 0.607);
+    color:black;
+}
+::selection{
+  background-color:black;
+  color:white;
+}
+@keyframes slide2{
+  from{
+    opacity:1
+  }
+  to{
+    opacity:0
+  }
+}
+@keyframes slide{
+  from{
+    opacity:0
+  }
+  to{
+    opacity:1
+  }
+}
+.sliding{
+  animation: slide 1s ease-in 1;
+  animation-fill-mode: forwards;
+}
+.sliding2{
+  animation: slide2 1s ease-in 1;
+  animation-fill-mode: forwards;
+}
+@keyframes gradientColorChange {
+  0%{
+    background-position: 100% 0;
+    
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+@keyframes ff-entry{
+  from{
+    opacity:0;
+    transform: translateX(50%) scale(0.96)
+  }
+  to{
+    opacity:1;
+    transform: translateX(0) scale(0.96)
+  }
+}
+
+.makeround{
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    padding:0px;
+  }
+
+  @media screen and (max-width: 875px) {
+    .ff-form-heading{
+      display: flex;
+      top:2%;
+      left:50%;
+      transform:translate(-50%,0%)
+    }
+    .f-form{
+      top:15%;
+      left:50%;
+      transform:translate(-50%,0%) !important;
+      width:max(400px,60%)
+    }
+    .f-bg-image {
+      height:600px;
+    }
+  }

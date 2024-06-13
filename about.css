@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&family=Roboto&family=Inter&display=swap');
+
+body{
+    margin:0;
+    background: rgb(139,251,195);
+    background: linear-gradient(90deg, rgba(139,251,195,0.636467086834734) 8%, rgba(139,251,208,0.6672794117647058) 17%, rgba(139,245,251,0.6616771708683473) 23%, rgba(102,243,201,0.6924894957983193) 38%, rgba(85,239,214,0.6280637254901961) 63%, rgba(13,207,238,0.6252626050420168) 94%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+hr{
+    margin:0;
+    width:100%;
+    height:10px;
+    background-color: #141313;
+    border: none;
+}
+
+/* About us section */
+.about-us-section-outer{
+    width:100%;
+    height:650px;
+    position:relative;
+}
+.about-us-section{
+    position: absolute;
+    height:100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    z-index:2;
+}
+.ab-s-o-img{
+    width:100%;
+    height:100%;
+    z-index:1;
+    object-fit: cover;
+    opacity: 0.5;
+}
+.ab-s-text{
+    border-radius:18px 0px 0px 18px;
+    width:45%;
+    height:80%;
+    background-color: white;
+    padding:30px;
+    position: relative;
+    opacity:0.8;
+    box-sizing: border-box;
+}
+.ab-s-logo{
+    position: absolute;
+    left:0px;
+    top:0px;
+    opacity: 0.1;
+}
+.ab-s-logo svg{
+  height : max(60px,8vw);
+  width: max(60px,8vw)
+}
+.ab-s-title
+{
+    font-size:max(3.5vw,30px);
+    margin:0px;
+}
+.ab-s-desc{
+  font-size:max(1.35vw,10.5px);
+    text-align:justify;
+    opacity: 0;
+    
+}
+.ab-c-name{
+    font-weight: bold;
+    font-size:max(1.6vw,12px);
+    letter-spacing: 1px;
+}
+.ab-s-img{
+    height:80%;
+    width:45%;
+    object-fit: cover;;
+    border-radius:0px 18px 18px 0px;
+    margin-left:-20px;
+    z-index:2;
+}
+
+/* What we believe In */
+.what-we-believe-box{
+    position:relative;
+    height:500px;
+    width:100%;
+}
+.wwb-bg-image{
+    position:absolute;
+    width: 100%;
+    height:100%;
+    object-fit:cover;
+}
+.wwb-shade{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(82, 76, 76, 0.831);
+    z-index:2;
+}
+.what-we-believe{
+    position:absolute;
+    width:80%;
+    margin:auto;
+    z-index:3;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.wwb-heading{
+    font-size:max(3.5vw,25px);
+    text-align:center;
+    font-weight:600;
+    letter-spacing: 5px;
+    color:white;
+}
+.wwb-desc{
+  font-size:max(1.7vw,14px);
+    color:white;
+    text-align:center;
+    font-weight:400;
+    transform: scale(0.2);
+    opacity:0.5
+}
+.c-name{
+    font-weight:500;
+    font-size:max(1.8vw,16px);
+    color:rgb(139,251,195,1);
+}
+
+
+/* Features */
+.aa-feature{
+    background: rgb(20,24,25);
+    background: radial-gradient(circle, rgba(20,24,25,0.874562324929972) 2%, rgba(56,52,52,1) 54%, rgba(10,1,1,0.9641981792717087) 96%);
+}
+.aa-feature-title{
+    margin:0px;
+    padding:20px;
+    color:white;
+    text-align:center;
+    letter-spacing:5px;
+    font-size: max(3.5vw,30px);
+}
+.aa-title-underline{
+    border:1px solid white;
+}
+.a-features{
+    display:flex;
+    width:100%;
+    gap:50px;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+}
+.f-card{
+    padding:20px;
+    border-radius:15px;
+    border:2px solid lightgrey;
+    color:white;
+    box-shadow : 2px 2px 4px rgb(139,251,195,1); 
+    height:max(35vw,340px);
+    width:320px;
+    transform: scale(0.5); 
+    margin:20px 0px
+}
+.f-card-header{
+    display: flex;
+    justify-content:center;
+    /* background-color: rgb(61, 56, 56); */
+}
+.fc-h-logo{
+    margin:0px auto;
+    height:max(40px,8vw);
+}
+.f-card-title{
+    text-align:center;
+    margin:20px 0px;
+    font-size:max(20px,1.8vw);
+    color:rgb(139,251,195,1);
+    text-decoration: overline white 2px;
+}
+.f-card-desc{
+    text-align:justify;
+    font-size:max(14px,1.3vw);
+    font-weight: 400;
+}
+.read-more-btn{
+    width:70%;
+    display:block;
+    margin:auto;
+    margin-top:30px;
+    padding:14px 12px;
+    border-radius:24px; 
+    background-color: rgb(139,251,195,1);
+    font-size:18px;
+    font-weight: bold;
+    border:2px solid lightgrey;
+    outline:none;
+    transition:0.2s;
+}
+.read-more-btn:hover{
+    background-color: rgb(244, 244, 244);
+}
+
+
+/* Testemonial */
+.cd__main{
+    display: block !important;
+    background: #ddfcf5 !important;
+    min-height: 450px;
+   height: 100vh;
+}
+.a-testimonial{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height:660px;
+  width: 100vw;
+  overflow: hidden;
+}
+.test-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.test-line{
+    width:80%;
+    border:1px solid white;
+}
+.testimonal-heading{
+    width:100%;
+    font-size:50px;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing:6px;
+    word-spacing:5px;
+    color:rgb(255, 241, 241);
+}
+.container{
+  width: 100%;
+  height: 100%;
+}
+span.textFitted{
+    font-size:12px !important;
+}
+.card {
+  background-color: #f9fafe;
+  width: 450px;
+  height: 42%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 25px 0 0 0;
+  transition: transform 400ms;
+  opacity: 0.5;
+  box-shadow: none;
+}
+.quote-icon {
+  position: absolute;
+  z-index: 0;
+  opacity: 0.05;
+  left: 3%;
+  top: 0;
+}
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 150px;
+  border: 5px solid #f9fafe;
+  box-shadow: 0 0 50px #ccc;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-60px, -60px);
+  z-index: 1;
+  object-fit: cover;
+}
+.header {
+  margin: 50px 0 0 0;
+  text-align: center;
+  z-index: 1;
+}
+.name {
+  font-family: "Hammersmith One", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 0;
+}
+.title {
+  font-family: "Hammersmith One", sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 5px 0 0 0;
+  padding: 0 5px;
+  color: #7ccdc5;
+}
+.quote-container {
+  margin: 0;
+  height: 100%;
+  z-index: 1;
+  padding: 15px 30px 30px 30px;
+  overflow: hidden;
+}
+.quote {
+  width: 100%;
+  height: 95%;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #73808c;
+  margin: 0;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  /* padding-top:20px; */
+}
+.swiper-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide-active {
+  z-index: 3;
+}
+.swiper-slide-active .card {
+  box-shadow: 0 8px 30px -7px #c9dff0;
+  opacity: 1;
+  transform: scale(1.5);
+}
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-button-next:focus,
+.swiper-button-prev:focus {
+  outline: none;
+}
+
+/* Achivements */
+.achivements{ 
+    position: relative;
+    display:flex;
+    width:100%;
+    margin:auto;
+    align-items:center;
+    justify-content:center;
+    gap:20vw;
+    padding:20px 0px;
+    height :400px;
+    overflow: hidden;
+}
+.achi-img{
+    position:absolute;
+    top:-20%;
+    left:-20%;
+    z-index: 2;
+    height:200%;
+    width:65vw;
+    opacity: 0.7;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.achi-des{
+    position: absolute;
+    font-size:max(2.3vw,16px);
+    text-align: center;
+    color:white;
+    right:5%;
+}
+@keyframes disappers{
+    from{
+        opacity:0
+    }
+    to{
+        opacity:1
+    }
+}
+@keyframes pulsate {
+    from {
+      transform: scale(0.2);
+      opacity: 0.5;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes scaleAndRotate {
+    from {
+      opacity: 0;
+      transform: scale(0.2) rotate(45deg);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) rotate(0);
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    .ab-s-desc{
+      font-size:max(1.5vw,10.5px);
+    }
+  }
+  @media screen and (max-width: 875px) {
+    .ab-s-desc{
+      font-size:max(1.7vw,10.5px);
+    }
+  }
+
+ 

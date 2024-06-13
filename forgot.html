@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../style/forgot.css">
+    <link rel="stylesheet" href="../style/nav-footer.css">
+    <link rel="icon" type="image/png" href="../assets/symbol.png">
+    <title>NUTRITHRIVE</title>
+</head>
+
+<body>
+    <img src="../assets/reset-bg.jpg" alt="" class="bg-image">
+    <div class="shade"></div>
+    <div class="reset-container">
+        <div class="reset-form-container">
+            <div class="inner-fc">
+                <div class="rf-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="115" height="115" fill="white"
+                        class="bi bi-shield-lock" viewBox="0 0 16 16">
+                        <path
+                            d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56" />
+                        <path
+                            d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415" />
+                    </svg>
+                </div>
+                <div class="rf-content">
+                    <h1 class="rf-header-title">Reset Password</h1>
+                    <form id="formReset">
+                    <div class="username-input">
+                        <h3 class="input-title">Username</h3>
+                        <input type="text" id="username" required placeholder="Enter Your Username">
+                    </div>
+                    <div class="date-input">
+                        <h3 class="input-title">Date Of Birth</h3>
+                        <input type="date" id="date" required min="1943-01-01" max="2005-12-31">
+                    </div>
+                    <div class="reset-input d-none">
+                        <input type="password" id="password" placeholder="New Password">
+                        <div class="eye-container" data-eye="open">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" id="eye"
+                                class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                <path
+                                    d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div id="password-strength-meter" class="d-none">
+                        <p class="pass-strength-desc">Strength : <span class="psd"></span></p>
+                        <div class="password-strength-color"></div>
+                    </div>
+                    <input class="submit-btn" type="submit" value="Sumbit">
+                    <a href="./user_signin.html" class="back-to-login">Back To Login</a>
+                    <input class="reset-btn d-none" type="submit" value="Reset Password">
+                </form>
+                    <div class="error-box">
+                        <p class="error-desc"></p>
+                    </div>
+                </div>
+                <div class="succesfull-update d-none">
+                    <h1 class="success-heading">Password Reset Successful</h1>
+                    <p class="success-des">Your password has been successfully reset. You can now log in with your new password....
+                        <span><a href="./user_signin.html" class="success-link">Log In</a></span>
+                    </p>
+                    <p class="success-des2">If you have any questions or need further assistance, please <a href="./contact.html" class="success-link">Contact us</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+<script src="../javascript-files/forgot.js"></script>
+
+</html>

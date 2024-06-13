@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>NUTRITHRIVE</title>
+    <link rel="stylesheet" href="../style/about.css">
+    <link rel="stylesheet" href="../style/nav-footer.css">
+    <link rel="icon" type="image/png" href="../assets/symbol.png">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css'>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="../assets/nav-logo.png" alt="" class="n-logo">
+        </div>
+        <div class="hamburger-icon" id="hamburger-icon">
+            &#9776;
+        </div>
+        <div class="nav-links">
+            <a href="./home.html" class="link">Home</a>
+            <a href="./about.html" class="link">About</a>
+            <a href="./contact.html" class="link">Contact</a>
+            <a href="./feedback.html" class="link">Feedback</a>
+        </div>
+        <div class="nav-signin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z" />
+                <path fill-rule="evenodd"
+                    d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+            </svg>
+            <a class="sign-title2" href="./user_signup.html">Signup/Login</a>
+        </div>
+    </nav>
+    <div class="sidebar" id="sidebar">
+        <h2 class="sidebar-heading">Dashboard</h2>
+        <a href="./home.html" class="link2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+              </svg>
+           <span> Home </span>
+        </a>
+        <a href="./about.html" class="link2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-square" viewBox="0 0 16 16">
+                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+              </svg>
+           <span> About </span>
+        </a>
+        <a href="./contact.html" class="link2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"/>
+              </svg>
+          <span>  Contact </span>
+        </a>
+        <a href="./feedback.html" class="link2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+              </svg>
+            <span>   Feedback</span>
+        </a>
+        <a href="./user_signup.html" class="link2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z" />
+                <path fill-rule="evenodd"
+                    d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+            </svg>
+           <span> Signup/Login</span>
+        </a>
+    </div>
+    <div class="about-us-section-outer">
+        <img src="../assets/a-aboutus.jpg" alt="" class="ab-s-o-img">
+        <div class="about-us-section">
+            <div class="ab-s-text">
+                <div class="ab-s-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="125px" height="125px">
+                        <path
+                            d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z" />
+                    </svg>
+                </div>
+                <h1 class="ab-s-title">
+                    About Us
+                </h1>
+                <p class="ab-s-desc">
+                    Welcome to <span class="ab-c-name">NUTRITHRIVE</span>, your ultimate destination for a transformative health and fitness experience. At our core, we are passionate advocates for holistic well-being, embracing the intricate connections between physical, mental, and emotional health.<br><br>
+                    Our mission extends beyond generic fitness advice. We are here to empower you with cutting-edge, evidence-based content and personalized fitness strategies that cater to your unique journey.<span class="ab-c-name">NUTRITHRIVE</span>  is not just a platform; it's your dedicated companion on the path to achieving and sustaining optimal health.<br><br>
+                    Join our thriving community and embark on a journey where diversity is celebrated, balance is key, and sustainable health practices are prioritized. e're not just about workouts; we're about crafting a lifestyle that radiates vitality and fulfillment. Get ready to redefine your health and fitness journey with us!
+                </p>
+            </div>
+            <img src="../assets/a-aboutus.jpg" alt="" class="ab-s-img">
+        </div>
+    </div>
+    <hr>
+    <div class="what-we-believe-box">
+        <img src="../assets/a-believe-bg-image.jpg" alt="" class="wwb-bg-image">
+        <div class="wwb-shade"></div>
+        <div class="what-we-believe">
+            <h1 class="wwb-heading">
+                What We Believe In ?
+            </h1>
+            <p class="wwb-desc">
+                At <span class="c-name">NUTRITHRIVE</span> we passionately believe in the
+                transformative power of
+                embracing a healthy lifestyle. Our dedication lies in empowering individuals to seize control of their
+                well-being, fostering positive choices for a life rich in vibrancy and fulfillment.
+            </p>
+            <p class="wwb-desc">Through evidence-based content, personalized fitness plans, and mindful living tips, we
+                not only embrace diversity but also advocate for a balanced and sustainable approach to health.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="aa-testimonial">
+        <div class="test-box">
+            <div class="test-line"></div>
+            <h2 class="testimonal-heading">Public Reviews</h2>
+            <div class="test-line"></div>
+        </div>
+        <div class="a-testimonial">
+            <div class="container">
+                <div class="swiper swiperCarousel">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="avatar"
+                                    src="https://img.freepik.com/free-photo/cheerful-indian-businessman-smiling-closeup-portrait-jobs-career-campaign_53876-129417.jpg?size=626&ext=jpg&ga=GA1.1.828056327.1704973684&semt=ais" />
+                                <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+                                    width="125px" height="125px">
+                                    <path
+                                        d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z" />
+                                </svg>
+                                <div class="header">
+                                    <h1 class="name">Amit Patel</h1>
+                                    <h2 class="title">Transformation Success Story</h2>
+                                </div>
+                                <div class="quote-container">
+                                    <p class="quote">
+                                        I cannot thank this health and fitness website enough for guiding me on my
+                                        transformative journey. Through their personalized workout plans and nutritional
+                                        advice, I've not only achieved my weight loss goals but also gained strength and
+                                        confidence. It's not just a website; it's a life-changer!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="avatar"
+                                    src="https://img.freepik.com/free-photo/beautiful-woman-purple-sweater-skirt_1303-17487.jpg?size=626&ext=jpg&ga=GA1.1.828056327.1704973684&semt=ais" />
+                                <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+                                    width="125px" height="125px">
+                                    <path
+                                        d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z" />
+                                </svg>
+                                <div class="header">
+                                    <h1 class="name">Dr. Priya Sharma</h1>
+                                    <h2 class="title">Expert Guidance for Beginners</h2>
+                                </div>
+                                <div class="quote-container">
+                                    <p class="quote">
+                                        As a fitness novice, I was overwhelmed with where to start. This website
+                                        provided clear and concise workout routines, along with easy-to-follow nutrition
+                                        tips. The expert guidance made me feel comfortable and motivated to kickstart my
+                                        fitness journey. It's the perfect resource for beginners!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="avatar"
+                                    src="https://img.freepik.com/free-photo/cheerful-indian-man_1098-18167.jpg?size=626&ext=jpg&ga=GA1.1.828056327.1704973684&semt=ais" />
+                                <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+                                    width="125px" height="125px">
+                                    <path
+                                        d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z" />
+                                </svg>
+                                <div class="header">
+                                    <h1 class="name">Rajesh Kumar</h1>
+                                    <h2 class="title">Diverse Workout Options</h2>
+                                </div>
+                                <div class="quote-container">
+                                    <p class="quote">
+                                        What sets this health and fitness website apart is the variety of workout
+                                        options available. From yoga to high-intensity interval training, there's
+                                        something for everyone. The diverse range keeps me engaged and prevents boredom,
+                                        making it easy to stick to my fitness routine
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="avatar"
+                                    src="https://img.freepik.com/free-photo/friendly-looking-charming-determined-cute-armenian-girl-performing-speech-show-coworkers-chart-pointing-upper-left-corner-standing-confident-relaxed-pose-smiling-broadly-self-assured_176420-34952.jpg?size=626&ext=jpg&ga=GA1.1.828056327.1704973684&semt=ais" />
+                                <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+                                    width="125px" height="125px">
+                                    <path
+                                        d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z" />
+                                </svg>
+                                <div class="header">
+                                    <h1 class="name">Ananya Singh</h1>
+                                    <h2 class="title">
+                                        Nutritional Wisdom
+                                    </h2>
+                                </div>
+                                <div class="quote-container">
+                                    <p class="quote">
+                                        The nutritional advice on this website is gold! It goes beyond the usual tips
+                                        and provides in-depth knowledge about the importance of different nutrients.
+                                        Armed with this information, I've made sustainable changes to my diet, resulting
+                                        in increased energy levels and overall well-being.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="avatar"
+                                    src="https://img.freepik.com/free-photo/content-successful-male-manager-using-tablet-looking-camera_1262-14194.jpg?size=626&ext=jpg&ga=GA1.1.828056327.1704973684&semt=ais" />
+                                <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+                                    width="125px" height="125px">
+                                    <path
+                                        d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z" />
+                                </svg>
+                                <div class="header">
+                                    <h1 class="name">Dr. Arjun Verma</h1>
+                                    <h2 class="title">Interactive Community</h2>
+                                </div>
+                                <div class="quote-container">
+                                    <p class="quote">
+                                        Being part of the website's community has been a game-changer. The forums and
+                                        discussion groups create a supportive environment where members share their
+                                        experiences, tips, and challenges. It feels like a virtual fitness family, and
+                                        the encouragement is truly uplifting
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="avatar"
+                                    src="https://img.freepik.com/premium-photo/portrait-young-beautiful-cute-cheerful-girl-smiling-gray-wall_136354-3057.jpg?size=626&ext=jpg&ga=GA1.1.828056327.1704973684&semt=ais" />
+                                <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+                                    width="125px" height="125px">
+                                    <path
+                                        d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z" />
+                                </svg>
+                                <div class="header">
+                                    <h1 class="name">Neha Gupta</h1>
+                                    <h2 class="title">Regular Motivational Content:</h2>
+                                </div>
+                                <div class="quote-container">
+                                    <p class="quote">
+                                        The motivational content on this website keeps me inspired and focused. Whether
+                                        it's success stories, motivational quotes, or weekly challenges, there's always
+                                        something to keep me on track. It's more than just a fitness resource; it's a
+                                        source of daily inspiration for a healthier lifestyle
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="aa-feature">
+        <h1 class="aa-feature-title">Our Features & Services</h1>
+        <div class="aa-title-underline"></div>
+        <div class="a-features">
+            <div class="f-card">
+                <div class="f-card-header">
+                    <img src="../assets/a-progress-tracking.png" alt="" class="fc-h-logo">
+                </div>
+                <h2 class="f-card-title">Progress Tracking</h2>
+                <div class="f-card-desc">
+                    Create an advanced progress tracking system that empowers users to meticulously log their workout routines, nutritional intake, and wellness activities.Incorporate reminders and notifications to keep users engaged and accountable, ensuring consistent and sustainable progress towards their health and fitness goals.
+                </div>
+                <button class="read-more-btn">Read More</button>
+            </div>
+            <div class="f-card">
+                <div class="f-card-header">
+                    <img src="../assets/a-community.png" alt="" class="fc-h-logo">
+                </div>
+                <h2 class="f-card-title">Community Features</h2>
+                <div class="f-card-desc">
+                    Join our vibrant community where users chat, exchange ideas, and share fitness journeys, supporting and guiding each other towards wellness goals. Engage in meaningful conversations, inspire others, and build lasting connections in a supportive environment.Connect with experts who offer valuable guidance and insights
+                </div>
+                <button class="read-more-btn">Read More</button>
+            </div>
+            <div class="f-card">
+                <div class="f-card-header">
+                    <img src="../assets/a-blogs-articles.png" alt="" class="fc-h-logo">
+                </div>
+                <h2 class="f-card-title">Blogs and Articles</h2>
+                <div class="f-card-desc">
+                    Develop a dynamic blog section featuring informative articles on fitness, nutrition, wellness, and
+                    lifestyle. Regularly updated content keeps users engaged and informed, positioning the website as a
+                    valuable resource for education and inspiration. Users can explore topics of interest.
+                </div>
+                <button class="read-more-btn">Read More</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="achivements">
+        <div class="achi-des">
+            <h3 class="achiheading ah1"  id="user-number">Current Users : <span class="counter" data-count="2000">0</span> </h3>
+            <h3 class="achiheading ah2"  id="expert-number">Community Experts :  <span class="counter" data-count="500">0</span></h3>
+            <h3 class="achiheading ah3"  id="feedback-count">Positive Feedbacks :  <span class="counter" data-count="1500">0</span></h3>
+        </div>
+        <img src="../assets/h-achivements2.png" alt="" class="achi-img">
+    </div>
+    <hr>
+    <div class="email-confirmation d-none-msg">
+        <p class="email-confirmation-msg">Your Email Has Been Successfully Recorded</p>
+    </div>
+    <footer class="contact">
+        <div class="updates">
+            <h3 class="update-heading">
+                Enter Email For Updates
+            </h3>
+            <form class="footer-form">
+                <div class="footer-form-con">
+                    <input type="email" class="update-email" placeholder="Enter You Email" id="update-mail" required>
+                </div>
+                <div class="footer-form-con">
+                    <input class="update-btn" value="Submit" type="submit">
+                </div>
+            </form>
+        </div>
+        <div class="ContactUs">
+            <h3 class="Contact-heading">
+                Contact Us
+            </h3>
+            <div class="email">
+                <div class="contact-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                    </svg>
+                </div>
+                <a href="mailto:vishveshg.cs.21@nitj.ac.in" class="contact-info">vishveshg.cs.21@nitj.ac.in</a>
+            </div>
+            <div class="phone">
+                <div class="contact-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-telephone" viewBox="0 0 16 16">
+                        <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                    </svg>
+                </div>
+                <a href="tel:+918872733000" class="contact-info">+91 8872733000</a>
+            </div>
+            <div class="address">
+                <div class="contact-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                    </svg>
+                </div>
+                <div class="conatact-info">NIT , Jalandhar</div>
+            </div>
+        </div>
+        <div class="Pages">
+            <h3 class="pg-head">Pages</h3>
+            <a class="pg-link" href="./home.html">Home</a>
+            <a class="pg-link" href="./about.html">About</a>
+            <a class="pg-link" href="./contact.html">Contact</a>
+            <a class="pg-link" href="./feedback.html">Feedback</a>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.6234348365642!2d75.53185997533096!3d31.396945174270645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a51d30c180edf%3A0x5b7633718d17ef33!2sDr%20B%20R%20Ambedkar%20National%20Institute%20of%20Technology%20Jalandhar!5e0!3m2!1sen!2sin!4v1692349684720!5m2!1sen!2sin"
+                width="300" height="200" style="border:0; border-radius: 5px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+    <hr>
+
+    <script src='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/textfit/2.4.0/textFit.min.js'></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script src="../javascript-files/about.js"></script>
+    <script src="../javascript-files/firebase.js"></script>
+    <script src="../javascript-files/email_record.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,393 @@
+.ff-form-container {
+  font-family: "Inter", sans-serif !important;
+  width: 100%;
+  height: 90vh;
+  position: relative;
+}
+.ff-fc-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  top: 0px;
+}
+.ff-fc-shade {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(108, 226, 187, 0.269);
+  top: 0px;
+}
+.form-container {
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  position: relative;
+}
+.fitness-form-outer-box {
+  top: 40px;
+  height: 100%;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  margin-left: 610px;
+  position: relative;
+  transform: scale(0.9) translateY(-50px);
+}
+.form-container-shade {
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  background-color: rgba(108, 226, 187, 0.911);
+}
+.fc-innerbg {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  position: absolute;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+#fitness-form {
+  background-color: rgba(24, 21, 21, 0.815);
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  color: white;
+  border-radius: 15px;
+  position: relative;
+}
+.fitness-form-header {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.fitness-form-box {
+  margin: 30px auto;
+  display: flex;
+  width: 100%;
+  gap: 40px;
+}
+.fitness-form-ib {
+  width: 95%;
+}
+.ffib-title {
+  margin: 0px;
+  margin-bottom: 5px;
+}
+.f-input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 36px;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+}
+.f-submit-btn {
+  display: block;
+  width: 35%;
+  margin: 20px auto;
+  height: 40px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  transition: 0.2s;
+  background-color: white;
+}
+.f-submit-btn:hover {
+  transform: scale(1.08);
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+}
+.fitness-table {
+  background-color: #1a1a1a; /* Darker background color */
+  color: #eaeaea; /* Light text color */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Change font family */
+  padding: 10px 0px;
+  height: 1250px;
+  position: relative;
+}
+.table-heading-exercise{
+  margin-left:20px;
+}
+.fitness-table #tableContainer {
+  width: 1000px; /* Increased table width */
+  margin: 0 auto;
+  background-color: #2b2b2b; /* Slightly darker container background color */
+  padding: 30px 0px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Darker box shadow */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fitness-table .table-heading {
+  color: rgb(139, 251, 195); /* Green color for the heading */
+  text-align: center;
+  font-size: 2.25em; /* Increased font size */
+  margin: 0px 0px 15px 0px;
+}
+
+.fitness-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Slightly darker box shadow */
+}
+
+.fitness-table th,
+.fitness-table td {
+  padding: 20px; /* Increased padding */
+  text-align: left;
+  border-bottom: 1px solid #555; /* Darker border color */
+  color: #ffffff; /* Light text color */
+  font-size: 15px; /* Increased font size */
+}
+.fitness-table li{
+  margin:10px 0px;
+}
+.fitness-table th {
+  background-color: #333; /* Dark gray background color for headers */
+  transition: background-color 0.3s ease; /* Add transition effect on header hover */
+  font-size:20px
+}
+
+.fitness-table th:hover {
+  background-color: #555; /* Darker background on header hover */
+}
+
+.fitness-table tr {
+  transition: background-color 0.3s ease; /* Add transition effect on row hover */
+}
+
+.fitness-table tr:hover {
+  background-color: #383838; /* Darker background on row hover */
+}
+
+.fitness-table td {
+  white-space: pre-line;
+}
+
+/* Animation effect for table rows */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.fitness-table tr {
+  animation: fadeIn 0.5s ease; /* Apply the fadeIn animation to table rows */
+  /* opacity:0; */
+}
+.fitness-table {
+  animation: slideIn 1s ease; /* Apply the slideIn animation to the entire table */
+}
+.d-none {
+  display: none !important;
+}
+@keyframes changeBackground {
+  0% {
+    background: rgba(0, 0, 0, 0.847) url("../assets/fitness-table-bg-1.avif")
+      center/cover no-repeat;
+  }
+  20% {
+    background: rgba(0, 0, 0, 0.76) url("../assets/fitness-table-bg-2.webp")
+      center/cover no-repeat;
+  }
+  40% {
+    background: rgba(0, 0, 0, 0.774) url("../assets/fitness-table-bg-3.jpeg")
+      center/cover no-repeat;
+  }
+  60% {
+    background: rgba(0, 0, 0, 0.758) url("../assets/fitness-table-bg-4.jpg")
+      center/cover no-repeat;
+  }
+  80% {
+    background: rgba(0, 0, 0, 0.692) url("../assets/fitness-table-bg-5.jpeg")
+      center/cover no-repeat;
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.721) url("../assets/fitness-table-bg-6.jpg")
+      center/cover no-repeat;
+  }
+}
+.fitness-table {
+  animation: changeBackground 60s infinite linear 0s; /* Adjust the duration and delay as needed */
+  position: relative;
+  overflow: hidden;
+}
+.sub-table {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  background-color: rgba(149, 251, 217, 0.263);
+  position: absolute;
+}
+
+.display-exercise-container {
+  width: 100%;
+  position: relative;
+  height: 90vh;
+  font-family: "Inter", sans-serif !important;
+  transition: 0.5s;
+}
+.display-exercise-shade {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  background-color: rgba(18, 18, 18, 0.849);
+}
+.display-exercise-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  object-fit: cover;
+}
+.display-exercise-box-header {
+  text-align: center;
+  margin: 0px 0px 50px 0px;
+  color: white;
+}
+.display-exercise-box {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  position: absolute;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.search-bar-name-container {
+  width: 95%;
+  margin: 20px 0px 20px 0px;
+  display: flex;
+  align-items: center;
+}
+.searched-exercise {
+  flex: 11;
+  padding: 10px 12px;
+  border-radius: 12px;
+  outline: none;
+  border: 1px solid black;
+  font-size: 18px;
+}
+#search-logo {
+  margin-left: -30px;
+}
+.display-eb-name-successful {
+  width: 60%;
+  border-radius: 15px;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  margin:auto;
+  margin-top:60px;
+
+}
+.display-detail-img{
+  display:flex;
+  gap:20px;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+}
+.dd-desc{
+  font-size:17px;
+  font-weight: bold;
+  margin:30px 0px;
+}
+.dd-desc2{
+  font-size:20px;
+  font-weight: bold;
+  margin:30px 0px;
+}
+.dd-desc span{
+  font-weight: normal;
+}
+.display-img{
+  width:40%;
+}
+.exercise-pic{
+  width:100%;
+}
+.instruct{
+  margin:5px;
+}
+.display-eb-name-fail{
+  padding:20px 20px 0px 20px;
+  background-color: rgba(255, 255, 255, 0.76);
+  color:black;
+  display:flex;
+  width:40%;
+  margin:auto;
+  margin-top: 60px;
+  border-radius:15px;
+  justify-content: center;
+  align-items: center;
+  height:140px;
+}
+.eb-fail-heading{
+  text-align:center;
+  font-size:25px; 
+  margin-top:5px;
+}
+.email-confirmation-msg{
+  font-size:20px;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes disappear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  
+  }
+}
